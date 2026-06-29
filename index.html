@@ -476,6 +476,31 @@
             display: inline-block;
         }
 
+        .os-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(122, 162, 247, 0.08);
+            border: 1px solid rgba(122, 162, 247, 0.25);
+            color: var(--posh-blue);
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            vertical-align: middle;
+            transition: all 0.2s ease;
+        }
+
+        .os-badge:hover {
+            background: rgba(122, 162, 247, 0.15);
+            border-color: var(--posh-blue);
+        }
+
+        .os-badge i {
+            font-size: 0.85rem;
+        }
+
+
         .feature-card h3 {
             font-size: 1.25rem;
             font-weight: 600;
@@ -810,7 +835,9 @@
                     <span class="feature-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></span>
                     <h3>Cross-Platform OS Icons</h3>
                     <p>Built-in logic automatically queries the host operating system, displaying custom environment
-                        glyphs (\uE62A Windows, \uF179 macOS, or \uF17C Linux) natively.</p>
+                        glyphs (<span class="os-badge"><i class="fa-brands fa-windows"></i> Windows</span>, <span
+                            class="os-badge"><i class="fa-brands fa-apple"></i> macOS</span>, or <span
+                            class="os-badge"><i class="fa-brands fa-linux"></i> Linux</span>) natively.</p>
                 </div>
 
                 <!-- Card 3 -->
