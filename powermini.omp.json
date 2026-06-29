@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "plain",
+          "foreground": "#7aa2f7",
+          "template": "{{ if eq .OS \"windows\" }} {{ else if eq .OS \"darwin\" }} {{ else }} {{ end }}"
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#7aa2f7",
+          "properties": {
+            "style": "agnoster_short",
+            "max_depth": 2,
+            "folder_icon": "..."
+          },
+          "template": " {{ .Path }} "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#7aa2f7",
+          "properties": {
+            "time_format": "03:04:05 PM"
+          },
+          "template": "at  {{ .CurrentDate | date .Format }}"
+        }
+      ]
+    },
+    {
+      "type": "newline"
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#9ece6a",
+          "template": "❯ "
+        }
+      ]
+    }
+  ],
+  "transient_prompt": {
+    "background": "transparent",
+    "foreground": "#9ece6a",
+    "template": "❯ "
+  },
+  "final_space": true
+}
