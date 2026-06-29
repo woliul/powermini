@@ -1,7 +1,7 @@
 # PowerMini 🚀
 > *A minimal, cross-platform Oh My Posh theme*
 
-![PowerMini Preview](assets/preview.png)
+![PowerMini Preview](assets/preview.svg)
 
 🌐 **Live Demo & Interactive Preview:** [woliul.github.io/powermini](https://woliul.github.io/powermini/)
 
