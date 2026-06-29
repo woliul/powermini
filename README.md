@@ -1,6 +1,8 @@
 # PowerMini 🚀
 > *A minimal, cross-platform Oh My Posh theme*
 
+![PowerMini Preview](assets/preview.png)
+
 An ultra-clean, feature-packed minimal theme for **Oh My Posh** designed to deliver maximum terminal utility while keeping screen clutter to an absolute minimum. It features a sleek multi-line workflow, automatic cross-platform capability, and an intelligent balanced directory truncation system.
 
 ## ✨ Features
