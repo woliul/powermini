@@ -70,6 +70,14 @@
 
             --font-ui: 'Outfit', sans-serif;
             --font-mono: 'MesloLGMNerdFontMono', 'Fira Code', 'JetBrains Mono', monospace;
+
+            /* Sticky Header Spacing Variables */
+            --header-height: 76px;
+        }
+
+        /* Enable smooth scrolling across the page */
+        html {
+            scroll-behavior: smooth;
         }
 
         * {
@@ -359,6 +367,8 @@
 
         .prompt-os {
             color: var(--posh-blue);
+            font-family: 'MesloLGMNerdFontMono', monospace;
+            font-size: 1.1rem;
         }
 
         .prompt-path {
@@ -398,8 +408,11 @@
 
         /* Features Section */
         .features-section {
-            padding: 4rem 0;
+            padding: 3rem 0 4rem 0;
+            /* Adjusted padding to prevent large gap spacing */
             border-top: 1px solid rgba(48, 54, 61, 0.3);
+            /* This property stops the scroll exactly below the sticky header */
+            scroll-margin-top: var(--header-height);
         }
 
         .section-header {
@@ -477,8 +490,11 @@
 
         /* Installation Tabs Section */
         .install-section {
-            padding: 4rem 0;
+            padding: 3rem 0 4rem 0;
+            /* Adjusted padding to prevent large gap spacing */
             border-top: 1px solid rgba(48, 54, 61, 0.3);
+            /* This property stops the scroll exactly below the sticky header */
+            scroll-margin-top: var(--header-height);
         }
 
         .install-tabs-nav {
@@ -653,6 +669,11 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
+            :root {
+                /* Let the scroll padding dynamically adjust to slightly larger heights on mobile */
+                --header-height: 120px;
+            }
+
             h1 {
                 font-size: 2.5rem;
             }
@@ -674,7 +695,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header id="site-header">
         <div class="container header-content">
             <a href="#" class="logo">
                 🚀 <span>PowerMini</span>
@@ -976,18 +997,18 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
             }
 
             if (os === 'windows') {
-                osIcon.innerText = ' ';
-                path.innerText = ' ~\\Development\\powermini';
+                osIcon.innerText = '\uE62A';
+                path.innerText = '\uE62A \u007e\\Development\\powermini';
                 title.innerText = 'Windows Command Prompt (via Clink)';
                 output.innerHTML = 'On branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             } else if (os === 'macos') {
-                osIcon.innerText = ' ';
-                path.innerText = ' ~/dev/powermini';
+                osIcon.innerText = '\uF179';
+                path.innerText = '\uF179 ~/dev/powermini';
                 title.innerText = 'macOS Terminal (zsh)';
                 output.innerHTML = 'on branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             } else if (os === 'linux') {
-                osIcon.innerText = ' ';
-                path.innerText = ' ~/dev/powermini';
+                osIcon.innerText = '\uF17C';
+                path.innerText = '\uF17C ~/dev/powermini';
                 title.innerText = 'Linux Bash Console';
                 output.innerHTML = 'on branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             }
@@ -1023,6 +1044,18 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
                 console.error('Failed to copy text: ', err);
             });
         }
+
+        // Dynamic Header Height Calculation (Ensures perfection on both desktop & mobile)
+        function updateHeaderOffset() {
+            const header = document.getElementById('site-header');
+            if (header) {
+                const height = header.offsetHeight;
+                document.documentElement.style.setProperty('--header-height', `${height}px`);
+            }
+        }
+
+        window.addEventListener('load', updateHeaderOffset);
+        window.addEventListener('resize', updateHeaderOffset);
     </script>
 </body>
 
