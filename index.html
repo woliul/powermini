@@ -14,9 +14,37 @@
     <!-- FontAwesome for standard icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Nerd Font Webfonts for prompt glyphs (FiraCode and Meslo LG M) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@v3.3.0/build/firacode-nerd-font.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mshaugh/nerdfont-webfonts@v3.3.0/build/meslolgm-nerd-font.css">
+    <!-- Self-hosted Meslo LGM Nerd Font Mono for accurate prompt glyph rendering -->
+    <style>
+        @font-face {
+            font-family: 'MesloLGMNerdFontMono';
+            src: url('assets/fonts/meslo/MesloLGMNerdFontMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MesloLGMNerdFontMono';
+            src: url('assets/fonts/meslo/MesloLGMNerdFontMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MesloLGMNerdFontMono';
+            src: url('assets/fonts/meslo/MesloLGMNerdFontMono-Italic.ttf') format('truetype');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MesloLGMNerdFontMono';
+            src: url('assets/fonts/meslo/MesloLGMNerdFontMono-BoldItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+    </style>
 
     <style>
         :root {
@@ -34,7 +62,7 @@
             --posh-dark: #1a1b26;
             
             --font-ui: 'Outfit', sans-serif;
-            --font-mono: 'MesloLGM Nerd Font', 'FiraCode Nerd Font', 'Fira Code', 'JetBrains Mono', monospace;
+            --font-mono: 'MesloLGMNerdFontMono', 'Fira Code', 'JetBrains Mono', monospace;
         }
 
         * {
