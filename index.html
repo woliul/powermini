@@ -810,7 +810,7 @@
                     <span class="feature-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></span>
                     <h3>Cross-Platform OS Icons</h3>
                     <p>Built-in logic automatically queries the host operating system, displaying custom environment
-                        glyphs (Windows ⊞, macOS 🍎, or Linux 🐧) natively.</p>
+                        glyphs (\uE62A Windows, \uF179 macOS, or \uF17C Linux) natively.</p>
                 </div>
 
                 <!-- Card 3 -->
@@ -997,18 +997,18 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
             }
 
             if (os === 'windows') {
-                osIcon.innerText = '\uE62A';
-                path.innerText = '\uE62A \u007e\\Development\\powermini';
+                osIcon.innerText = ' ';
+                path.innerText = ' ~\\Development\\powermini';
                 title.innerText = 'Windows Command Prompt (via Clink)';
                 output.innerHTML = 'On branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             } else if (os === 'macos') {
-                osIcon.innerText = '\uF179';
-                path.innerText = '\uF179 ~/dev/powermini';
+                osIcon.innerText = ' ';
+                path.innerText = ' ~/dev/powermini';
                 title.innerText = 'macOS Terminal (zsh)';
                 output.innerHTML = 'on branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             } else if (os === 'linux') {
-                osIcon.innerText = '\uF17C';
-                path.innerText = '\uF17C ~/dev/powermini';
+                osIcon.innerText = ' ';
+                path.innerText = ' ~/dev/powermini';
                 title.innerText = 'Linux Bash Console';
                 output.innerHTML = 'on branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             }
