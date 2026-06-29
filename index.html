@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerMini 🚀 | Minimal Oh My Posh Theme</title>
-    <meta name="description" content="An ultra-clean, feature-packed minimal cross-platform theme for Oh My Posh with automatic OS icons, native slashes, and balanced folder truncation.">
-    
+    <meta name="description"
+        content="An ultra-clean, feature-packed minimal cross-platform theme for Oh My Posh with automatic OS icons, native slashes, and balanced folder truncation.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- FontAwesome for standard icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -23,6 +27,7 @@
             font-style: normal;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'MesloLGMNerdFontMono';
             src: url('assets/fonts/meslo/MesloLGMNerdFontMono-Bold.ttf') format('truetype');
@@ -30,6 +35,7 @@
             font-style: normal;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'MesloLGMNerdFontMono';
             src: url('assets/fonts/meslo/MesloLGMNerdFontMono-Italic.ttf') format('truetype');
@@ -37,6 +43,7 @@
             font-style: italic;
             font-display: swap;
         }
+
         @font-face {
             font-family: 'MesloLGMNerdFontMono';
             src: url('assets/fonts/meslo/MesloLGMNerdFontMono-BoldItalic.ttf') format('truetype');
@@ -52,15 +59,15 @@
             --card-bg: rgba(22, 27, 34, 0.6);
             --border-color: rgba(48, 54, 61, 0.8);
             --primary-glow: rgba(122, 162, 247, 0.15);
-            
+
             --text-main: #f0f6fc;
             --text-muted: #8b949e;
-            
+
             /* Oh My Posh Palette */
             --posh-blue: #7aa2f7;
             --posh-green: #9ece6a;
             --posh-dark: #1a1b26;
-            
+
             --font-ui: 'Outfit', sans-serif;
             --font-mono: 'MesloLGMNerdFontMono', 'Fira Code', 'JetBrains Mono', monospace;
         }
@@ -77,7 +84,7 @@
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 10% 20%, rgba(122, 162, 247, 0.08) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(158, 206, 106, 0.05) 0%, transparent 40%);
             background-attachment: fixed;
@@ -117,7 +124,7 @@
             color: var(--text-main);
             transition: transform 0.2s ease;
         }
-        
+
         .logo:hover {
             transform: scale(1.02);
         }
@@ -305,9 +312,17 @@
             border-radius: 50%;
         }
 
-        .dot-red { background-color: #ff5f56; }
-        .dot-yellow { background-color: #ffbd2e; }
-        .dot-green { background-color: #27c93f; }
+        .dot-red {
+            background-color: #ff5f56;
+        }
+
+        .dot-yellow {
+            background-color: #ffbd2e;
+        }
+
+        .dot-green {
+            background-color: #27c93f;
+        }
 
         .terminal-title {
             position: absolute;
@@ -625,8 +640,15 @@
 
         /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(5px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Responsive adjustments */
@@ -634,9 +656,12 @@
             h1 {
                 font-size: 2.5rem;
             }
+
             .nav-links {
-                display: none; /* simple hidden for mobile for neatness */
+                display: none;
+                /* simple hidden for mobile for neatness */
             }
+
             .header-content {
                 justify-content: center;
                 flex-direction: column;
@@ -645,6 +670,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -658,8 +684,12 @@
                 <a href="#installation" class="nav-link">Installation</a>
                 <div class="github-btn-wrap">
                     <!-- GitHub Star & Fork buttons via iframe -->
-                    <iframe src="https://ghbtns.com/github-btn.html?user=woliul&repo=powermini&type=star&count=true&size=medium" frameborder="0" scrolling="0" width="100" height="20" title="GitHub Stars"></iframe>
-                    <iframe src="https://ghbtns.com/github-btn.html?user=woliul&repo=powermini&type=fork&count=true&size=medium" frameborder="0" scrolling="0" width="100" height="20" title="GitHub Forks"></iframe>
+                    <iframe
+                        src="https://ghbtns.com/github-btn.html?user=woliul&repo=powermini&type=star&count=true&size=medium"
+                        frameborder="0" scrolling="0" width="100" height="20" title="GitHub Stars"></iframe>
+                    <iframe
+                        src="https://ghbtns.com/github-btn.html?user=woliul&repo=powermini&type=fork&count=true&size=medium"
+                        frameborder="0" scrolling="0" width="100" height="20" title="GitHub Forks"></iframe>
                 </div>
             </div>
         </div>
@@ -670,10 +700,12 @@
         <section class="hero">
             <span class="badge">Oh My Posh Custom Theme</span>
             <h1>An Ultra-Clean, Premium<br><span>Minimal Prompt Theme</span></h1>
-            <p class="subtitle">A highly optimized multi-line layout featuring smart balanced folder depth truncation, cross-platform OS detection, and zero screen clutter.</p>
-            
+            <p class="subtitle">A highly optimized multi-line layout featuring smart balanced folder depth truncation,
+                cross-platform OS detection, and zero screen clutter.</p>
+
             <div class="cta-buttons">
-                <a href="https://raw.githubusercontent.com/woliul/powermini/main/powermini.omp.json" class="btn btn-primary" download id="download-config-btn">
+                <a href="https://raw.githubusercontent.com/woliul/powermini/main/powermini.omp.json"
+                    class="btn btn-primary" download id="download-config-btn">
                     <i class="fa-solid fa-download"></i> Download Theme Config
                 </a>
                 <a href="https://github.com/woliul/powermini" class="btn btn-secondary" target="_blank" rel="noopener">
@@ -684,11 +716,14 @@
             <!-- Interactive Terminal Preview -->
             <div class="terminal-preview-container">
                 <div class="terminal-tabs">
-                    <button class="terminal-tab-btn active" onclick="setTerminalOS('windows')"><i class="fa-brands fa-windows"></i> Windows</button>
-                    <button class="terminal-tab-btn" onclick="setTerminalOS('macos')"><i class="fa-brands fa-apple"></i> macOS</button>
-                    <button class="terminal-tab-btn" onclick="setTerminalOS('linux')"><i class="fa-brands fa-linux"></i> Linux</button>
+                    <button class="terminal-tab-btn active" onclick="setTerminalOS('windows')"><i
+                            class="fa-brands fa-windows"></i> Windows</button>
+                    <button class="terminal-tab-btn" onclick="setTerminalOS('macos')"><i class="fa-brands fa-apple"></i>
+                        macOS</button>
+                    <button class="terminal-tab-btn" onclick="setTerminalOS('linux')"><i class="fa-brands fa-linux"></i>
+                        Linux</button>
                 </div>
-                
+
                 <div class="terminal-window">
                     <div class="terminal-header">
                         <div class="terminal-dots">
@@ -708,13 +743,13 @@
                                 </div>
                                 <span class="prompt-time" id="preview-time">at  01:30:28 AM</span>
                             </div>
-                            
+
                             <!-- Prompt line -->
                             <div class="terminal-input-line">
                                 <span class="prompt-chevron">❯</span>
                                 <input type="text" class="terminal-input" value="git status" readonly>
                             </div>
-                            
+
                             <!-- Sample output -->
                             <div class="terminal-output" id="preview-output">
                                 On branch main<br>
@@ -739,34 +774,38 @@
                 <h2>✨ Premium Features</h2>
                 <p>Designed for power-users who value speed, accuracy, and clear terminal screens.</p>
             </div>
-            
+
             <div class="features-grid">
                 <!-- Card 1 -->
                 <div class="feature-card">
                     <span class="feature-icon"><i class="fa-solid fa-microchip"></i></span>
                     <h3>Minimal Footprint</h3>
-                    <p>Uses a distraction-free multi-line prompt ending in a single chevron. Out-of-the-box configuration for transient prompts hides previous command blocks on run.</p>
+                    <p>Uses a distraction-free multi-line prompt ending in a single chevron. Out-of-the-box
+                        configuration for transient prompts hides previous command blocks on run.</p>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="feature-card">
                     <span class="feature-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></span>
                     <h3>Cross-Platform OS Icons</h3>
-                    <p>Built-in logic automatically queries the host operating system, displaying custom environment glyphs (Windows ⊞, macOS 🍎, or Linux 🐧) natively.</p>
+                    <p>Built-in logic automatically queries the host operating system, displaying custom environment
+                        glyphs (Windows ⊞, macOS 🍎, or Linux 🐧) natively.</p>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="feature-card">
                     <span class="feature-icon"><i class="fa-solid fa-slash"></i></span>
                     <h3>Cross-Platform Slashes</h3>
-                    <p>Path directories dynamically render with native OS format separators (backslashes on Windows, forward slashes on macOS and Linux) automatically.</p>
+                    <p>Path directories dynamically render with native OS format separators (backslashes on Windows,
+                        forward slashes on macOS and Linux) automatically.</p>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="feature-card">
                     <span class="feature-icon"><i class="fa-solid fa-folder-open"></i></span>
                     <h3>Balanced Directory Separation</h3>
-                    <p>Leverages custom properties with <code>max_depth: 2</code> and an elegant <code>...</code> truncation system to ensure long paths remain clean and brief.</p>
+                    <p>Leverages custom properties with <code>max_depth: 2</code> and an elegant <code>...</code>
+                        truncation system to ensure long paths remain clean and brief.</p>
                 </div>
             </div>
         </section>
@@ -779,7 +818,8 @@
             </div>
 
             <div class="install-tabs-nav">
-                <button class="install-tab-link active" onclick="switchInstallTab('clink', this)">Command Prompt (Clink)</button>
+                <button class="install-tab-link active" onclick="switchInstallTab('clink', this)">Command Prompt
+                    (Clink)</button>
                 <button class="install-tab-link" onclick="switchInstallTab('powershell', this)">PowerShell</button>
                 <button class="install-tab-link" onclick="switchInstallTab('bashzsh', this)">Bash / Zsh</button>
             </div>
@@ -793,7 +833,8 @@
                         <div class="code-block-wrapper">
                             <div class="code-header">
                                 <span>CMD</span>
-                                <button class="copy-btn" onclick="copyCode('cmd-enable-code', this)"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button class="copy-btn" onclick="copyCode('cmd-enable-code', this)"><i
+                                        class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <pre><code id="cmd-enable-code">clink config prompt use oh-my-posh</code></pre>
                         </div>
@@ -804,11 +845,13 @@
                         <div class="code-block-wrapper">
                             <div class="code-header">
                                 <span>CMD</span>
-                                <button class="copy-btn" onclick="copyCode('cmd-theme-code', this)"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button class="copy-btn" onclick="copyCode('cmd-theme-code', this)"><i
+                                        class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <pre><code id="cmd-theme-code">clink set ohmyposh.theme "C:\path\to\your\powermini.omp.json"</code></pre>
                         </div>
-                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">💡 <em>Replace the path with the absolute path to your downloaded JSON file.</em></p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">💡 <em>Replace the
+                                path with the absolute path to your downloaded JSON file.</em></p>
                     </li>
                 </ol>
             </div>
@@ -822,7 +865,8 @@
                         <div class="code-block-wrapper">
                             <div class="code-header">
                                 <span>PowerShell</span>
-                                <button class="copy-btn" onclick="copyCode('ps-open-code', this)"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button class="copy-btn" onclick="copyCode('ps-open-code', this)"><i
+                                        class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <pre><code id="ps-open-code">notepad $PROFILE</code></pre>
                         </div>
@@ -833,11 +877,13 @@
                         <div class="code-block-wrapper">
                             <div class="code-header">
                                 <span>PowerShell Profile</span>
-                                <button class="copy-btn" onclick="copyCode('ps-hook-code', this)"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button class="copy-btn" onclick="copyCode('ps-hook-code', this)"><i
+                                        class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <pre><code id="ps-hook-code">oh-my-posh init pwsh --config "C:\path\to\your\powermini.omp.json" | Invoke-Expression</code></pre>
                         </div>
-                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">💡 <em>Ensure you update the path string to point to your local theme JSON file.</em></p>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;">💡 <em>Ensure you
+                                update the path string to point to your local theme JSON file.</em></p>
                     </li>
                 </ol>
             </div>
@@ -851,7 +897,8 @@
                         <div class="code-block-wrapper">
                             <div class="code-header">
                                 <span>Bash / Zsh (~/.bashrc or ~/.zshrc)</span>
-                                <button class="copy-btn" onclick="copyCode('bash-hook-code', this)"><i class="fa-regular fa-copy"></i> Copy</button>
+                                <button class="copy-btn" onclick="copyCode('bash-hook-code', this)"><i
+                                        class="fa-regular fa-copy"></i> Copy</button>
                             </div>
                             <pre><code id="bash-hook-code"># For Bash:
 eval "$(oh-my-posh init bash --config /path/to/your/powermini.omp.json)"
@@ -862,7 +909,8 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
                     </li>
                     <li class="step-item">
                         <div class="step-title"><span class="step-number">2</span> Source your changes</div>
-                        <p>Run <code>source ~/.bashrc</code> or <code>source ~/.zshrc</code> to load the changes instantly.</p>
+                        <p>Run <code>source ~/.bashrc</code> or <code>source ~/.zshrc</code> to load the changes
+                            instantly.</p>
                     </li>
                 </ol>
             </div>
@@ -873,12 +921,17 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
     <footer>
         <div class="container footer-content">
             <div class="footer-links">
-                <a href="https://github.com/woliul/powermini" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://github.com/woliul/powermini/blob/main/LICENSE" target="_blank" rel="noopener"><i class="fa-solid fa-file-contract"></i> License</a>
-                <a href="https://ohmyposh.dev" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Oh My Posh Docs</a>
+                <a href="https://github.com/woliul/powermini" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://github.com/woliul/powermini/blob/main/LICENSE" target="_blank" rel="noopener"><i
+                        class="fa-solid fa-file-contract"></i> License</a>
+                <a href="https://ohmyposh.dev" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Oh My
+                    Posh Docs</a>
             </div>
             <div class="copyright">
-                &copy; 2026 PowerMini Theme. Released under the MIT License. Created by <a href="https://github.com/woliul" target="_blank" rel="noopener" style="color: var(--posh-blue); text-decoration: none;">woliul</a>.
+                &copy; 2026 PowerMini Theme. Released under the MIT License. Created by <a
+                    href="https://github.com/woliul" target="_blank" rel="noopener"
+                    style="color: var(--posh-blue); text-decoration: none;">woliul</a>.
             </div>
         </div>
     </footer>
@@ -900,7 +953,7 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
                 timeEl.innerHTML = `at  ${hoursStr}:${minutes}:${seconds} ${ampm}`;
             }
         }
-        
+
         setInterval(updateMockupTime, 1000);
         updateMockupTime();
 
@@ -910,12 +963,12 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
             const path = document.getElementById('preview-path');
             const title = document.getElementById('terminal-title-text');
             const output = document.getElementById('preview-output');
-            
+
             // Remove active state from all buttons
             document.querySelectorAll('.terminal-tab-btn').forEach(btn => {
                 btn.classList.remove('active');
             });
-            
+
             // Add active state to matching button
             const clickedBtn = event.currentTarget;
             if (clickedBtn) {
@@ -924,7 +977,7 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
 
             if (os === 'windows') {
                 osIcon.innerText = ' ';
-                path.innerText = ' C:\\Development\\powermini';
+                path.innerText = ' ~\\Development\\powermini';
                 title.innerText = 'Windows Command Prompt (via Clink)';
                 output.innerHTML = 'On branch main<br>Your branch is up to date with \'origin/main\'.<br>nothing to commit, working tree clean';
             } else if (os === 'macos') {
@@ -972,4 +1025,5 @@ eval "$(oh-my-posh init zsh --config /path/to/your/powermini.omp.json)"</code></
         }
     </script>
 </body>
+
 </html>
